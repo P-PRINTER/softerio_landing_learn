@@ -9,10 +9,6 @@ h1, h2, h2, h4, h5, h6,
     font-weight: 600;
 }
 
-.big-title {
-    font-size: 55px;
-}
-
 
 .bg-blue {
     background-color: var(--bs-blue);
@@ -56,6 +52,18 @@ h1, h2, h2, h4, h5, h6,
 }
 
 
+.big-title {
+    font-size: 55px;
+}
+.list-item-num {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+}
 .content-text {
     font-size: 0.9rem;
 }
@@ -124,10 +132,6 @@ h1, h2, h2, h4, h5, h6,
 .stage-item {
     margin-top: 24pt;
 }
-.stage-n {
-    width: 34px;
-    height: 34px;
-}
 .stage-btn {
     width: 300px;
     height: 129px;
@@ -150,4 +154,11 @@ h1, h2, h2, h4, h5, h6,
 .price-num {
     display: inline-block;
     margin-bottom: 8pt;
+}
+
+.task-list {
+    max-height: 500px;
+}
+.task {
+    width: 410px;
 }
