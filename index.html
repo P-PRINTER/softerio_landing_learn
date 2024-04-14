@@ -18,7 +18,7 @@
 </head>
 <body class="page">
 
-<header class="container">
+<header class="header container">
     <div class="navbar navbar-expand-lg d-flex justify-content-center">
 
         <a class="navbar-brand" href="#">
@@ -72,10 +72,10 @@
             
                     <ul class="messangers d-flex gap-2 align-items-center list-unstyled my-0">
                         <li>
-                            <a class="btn btn-messanger" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
+                            <a class="btn btn-messanger icon-center" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
                         </li>
                         <li>
-                            <a class="btn btn-messanger" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
+                            <a class="btn btn-messanger icon-center" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
                         </li>
                     </ul>
                 </section>
@@ -85,9 +85,9 @@
     </div>
 </header>
 
-<main class="container">
-    <section class="lead bg-info rounded p-5">
-            <h1>Разработка мобильных приложений и сервисов</h1>
+<main class="main">
+    <section class="lead container text-bg-blue rounded-4 p-5">
+            <h1 class="big-title">Разработка мобильных приложений и сервисов</h1>
 
             <ul style="list-style: none;">
                 <li>
@@ -104,20 +104,20 @@
             <button class="btn btn-success p-3">Онлайн-консультация</button>
     </section>
 
-    <section class="services p-5">
+    <section class="services container p-5">
         <header class="d-flex gap-5 align-items-center mb-5">
-            <h2 class="h1">Наши услуги</h2>
-            <span class="text-secondary">Разработка мобильных приложений<br> и веб-проектов для бизнеса и стартапов</span>
+            <h2 class="big-title">Наши услуги</h2>
+            <span class="description text-secondary">Разработка мобильных приложений<br> и веб-проектов для бизнеса и стартапов</span>
         </header>
 
         <ul class="service-list list-unstyled d-flex gap-2 justify-content-between">
             <li class="service-item">
-                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
-                    <header class="header d-flex flex-column gap-4 align-items-center mb-4">
+                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header d-flex flex-column gap-4 align-items-center">
                         <h3 class="title order-2 h5 text-center">Разработка мобильных приложений</h3>
                         <img class="preview" src="img/smartphone.svg" alt="smartphone" width="50" height="89.8">
                     </header>
-                    <section class="content mb-4 d-none" style="font-size: 0.9rem;">
+                    <section class="content d-none" style="font-size: 0.9rem;">
                     </section>
                     <footer class="footer tags">
                         <ul class="tag-list list-inline text-center">
@@ -132,12 +132,12 @@
                 </article>
             </li>
             <li class="service-item">
-                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
-                    <header class="header d-flex gap-4 align-items-center justify-content-start mb-4">
+                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header d-flex gap-4 align-items-center justify-content-start">
                         <h3 class="title order-2 h5">Web разработка</h3>
                         <img class="preview" src="img/developing.svg" alt="developing-icon" width="48.7" height="59">
                     </header>
-                    <section class="content mb-4" style="font-size: 0.9rem;">
+                    <section class="content">
                         <p class="content-text">
                             Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.
                         </p>
@@ -161,12 +161,12 @@
                 </article>
             </li>
             <li class="service-item">
-                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
-                    <header class="header d-flex flex-column gap-4 align-items-center mb-4">
+                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header d-flex flex-column gap-4 align-items-center">
                         <h3 class="title order-2 h5 text-center">Проектирование мобильного приложения</h3>
                         <img class="preview" src="img/apps.svg" alt="applications" width="156.3" height="91">
                     </header>
-                    <section class="content mb-4 d-none" style="font-size: 0.9rem;">
+                    <section class="content d-none">
                     </section>
                     <footer class="footer tags">
                         <ul class="tag-list list-inline text-center">
@@ -183,24 +183,259 @@
         </ul>
     </section>
 
-    <section class="stages bg-info p-5">
-        <h2>Этапы разработки</h2>
+    <section class="stages container text-bg-blue rounded-4 py-5">
+        <h2 class="big-title text-center mb-5">Этапы разработки</h2>
+
+        <ol class="stage-list list-unstyled d-flex flex-wrap justify-content-center gap-3">
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">1</span>
+                            <h3 class="title fs-5">Сбор требований</h3>
+                        </div>
+                        <img class="preview" src="img/stage-1.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            Детальное изучение требований, ресурсов и исходной информации по проекту и формирование технического задания на разработку ПО.
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">2</span>
+                            <h3 class="title fs-5">UI/UX Дизайн</h3>
+                        </div>
+                        <img class="preview" src="img/stage-2.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            Разработка современного функционального и удобного дизайна с применением новейших инструментов.
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">3</span>
+                            <h3 class="title fs-5">Прототип (MVP)</h3>
+                        </div>
+                        <img class="preview" src="img/stage-3.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            В результате проектирования формируется прототип и отправляется для разработки продукта
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">4</span>
+                            <h3 class="title fs-5">Разработка</h3>
+                        </div>
+                        <img class="preview" src="img/stage-4.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            Процесс разработки системы интеллектуального учета, мобильного приложения или веб-сайта в режиме максимальной прозрачности.
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">5</span>
+                            <h3 class="title fs-5">Тестирование</h3>
+                        </div>
+                        <img class="preview" src="img/stage-5.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            В ходе тестовых запусков обеспечиваем полную отказоустойчивость продукта.
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">6</span>
+                            <h3 class="title fs-5">Развертывание</h3>
+                        </div>
+                        <img class="preview" src="img/stage-6.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            Запуск готового продукта в работу (ИСУ, сайта, приложения).
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <section class="stage d-flex flex-column gap-3">
+                    <header class="header d-flex flex-column gap-4">
+                        <div class="d-flex gap-3 order-2 align-items-baseline">
+                            <span class="stage-n badge icon-center text-bg-darkblue fs-5 rounded-pill">7</span>
+                            <h3 class="title fs-5">Поддержка и обслуживание</h3>
+                        </div>
+                        <img class="preview" src="img/stage-7.png" alt="preview" width="300" height="129">
+                    </header>
+                    <section class="content">
+                        <p class="content-text">
+                            Обеспечиваем полную техническую поддержку и сопровождение по всем вопросам, возникающим после развертывания.
+                        </p>
+                    </section>
+                </section>
+            </li>
+            <li class="stage-item">
+                <button class="stage-btn btn btn-danger">Оставить заявку</button>
+            </li>
+        </ol>
     </section>
 
-    <section class="price p-5">
-        <h2>Стоимость разработки мобильных приложений</h2>
+    <section class="price container p-5">
+        <h2 class="big-title text-center mb-5">Стоимость разработки мобильных приложений</h2>
+        <p class="description text-secondary mb-5">
+            Мы собрали стандартные элементы приложений в пакеты, для примерного понимания стоимости разработки. Чтобы заказать мобильное приложение свяжитесь с нами, мы вас проконсультируем, проведем аудит ценовых предложений других студий. Ниже цены на типовые приложения.
+        </p>
+
+        <ul class="offer-list list-unstyled d-flex justify-content-between gap-2">
+            <li class="offer-item">
+                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                    <header class="header d-flex gap-3 justify-content-center align-items-end">
+                        <h3 class="h3 order-2">Типовой</h3>
+                        <img src="img/smartphone.svg" alt="simple smartphone" height="50.3">
+                    </header>
+                    
+                    <ul class="pack-list">
+                        <li class="pack-item d-flex justify-content-between align-items-center">
+                            <span class="content-text">Каталог товаров или услуг</span>
+                            <span class="tick bg-blue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Сделать заказ</span>
+                            <span class="tick bg-blue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Новости и акции</span>
+                            <span class="tick bg-blue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Обратная связь</span>
+                            <span class="tick bg-blue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Контакты</span>
+                            <span class="tick bg-blue rounded-pill"></span>
+                        </li>
+                    </ul>
+
+                    <footer class="footer text-center">
+                        <span class="price-num fs-4 fw-medium">1 000 000 руб.</span>
+                        <br>
+                        <a class="btn btn-outline-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                    </footer>
+                </article>
+            </li>
+            <li class="offer-item">
+                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                    <header class="header d-flex gap-3 justify-content-center align-items-end">
+                        <h3 class="h3 order-2">Бизнес</h3>
+                        <img src="img/smartphone-business.svg" alt="simple smartphone" height="50.3">
+                    </header>
+                    
+                    <ul class="pack-list">
+                        <li class="pack-item d-flex justify-content-between align-items-center">
+                            <span class="content-text">Программа лояльности</span>
+                            <span class="tick bg-darkblue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Push уведомления</span>
+                            <span class="tick bg-darkblue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Серверная часть</span>
+                            <span class="tick bg-darkblue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Панель управления</span>
+                            <span class="tick bg-darkblue rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Чаты</span>
+                            <span class="tick bg-darkblue rounded-pill"></span>
+                        </li>
+                    </ul>
+
+                    <footer class="footer text-center">
+                        <span class="price-num fs-4 fw-medium">2 000 000 руб.</span>
+                        <br>
+                        <a class="btn btn-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                    </footer>
+                </article>
+            </li>
+            <li class="offer-item">
+                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                    <header class="header d-flex gap-3 justify-content-center align-items-end">
+                        <h3 class="h3 order-2">Кастом</h3>
+                        <img src="img/smartphone-custom.svg" alt="simple smartphone" height="50.3">
+                    </header>
+                    
+                    <ul class="pack-list">
+                        <li class="pack-item d-flex justify-content-between align-items-center">
+                            <span class="content-text">Автоматизация бизнес-процессов</span>
+                            <span class="tick bg-red rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Сложные интеграции</span>
+                            <span class="tick bg-red rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Маркетплейс</span>
+                            <span class="tick bg-red rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Корпоративные решения</span>
+                            <span class="tick bg-red rounded-pill"></span>
+                        </li>
+                        <li class="pack-item d-flex justify-content-between">
+                            <span class="content-text">Smart TV, Kit, VR \ AR</span>
+                            <span class="tick bg-red rounded-pill"></span>
+                        </li>
+                    </ul>
+
+                    <footer class="footer text-center">
+                        <span class="price-num fs-4 fw-medium">3 000 000 руб.</span>
+                        <br>
+                        <a class="btn btn-outline-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                    </footer>
+                </article>
+            </li>
+        </ul>
     </section>
 
-    <section class="tasks p-5">
-        <h2>Какие задачи поможет решить запуск мобильного приложения</h2>
+    <section class="tasks container p-5">
+        <h2 class="big-title text-center">Какие задачи поможет решить запуск мобильного приложения</h2>
     </section>
 
-    <section class="order p-5">
-        <h2>Заказать приложение</h2>
+    <section class="order container p-5">
+        <h2 class="big-title text-center">Заказать приложение</h2>
     </section>
 </main>
 
-<footer class="container">
+<footer class="footer container">
     <div class="d-flex">
         <img src="img/logo.svg" alt="Logotype" width="285" height="72">
     
@@ -242,10 +477,10 @@
     
             <ul class="messangers list-unstyled d-flex gap-2 align-items-center p-0 m-0">
                 <li>
-                    <a class="btn btn-messanger" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
+                    <a class="btn btn-messanger icon-center" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
                 </li>
                 <li>
-                    <a class="btn btn-messanger" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
+                    <a class="btn btn-messanger icon-center" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
                 </li>
             </ul>
         </section>

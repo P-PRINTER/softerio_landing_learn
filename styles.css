@@ -1,18 +1,47 @@
-.page {
-    background-color: #FEF4FF;
+:root {
+    --bs-blue: #3980FF;
+    --bs-darkblue: #0C4AB3;
+    --bs-red: #EB5757;
 }
 
+h1, h2, h2, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+.big-title {
+    font-size: 55px;
+}
+
+
+.bg-blue {
+    background-color: var(--bs-blue);
+}
+.bg-darkblue {
+    background-color: var(--bs-darkblue);
+}
+.bg-red {
+    background-color: var(--bs-red);
+}
+.text-bg-blue {
+    color: white;
+    background-color: var(--bs-blue);
+}
+.text-bg-darkblue {
+    color: white;
+    background-color: var(--bs-darkblue);
+}
+.text-bg-red {
+    color: white;
+    background-color: var(--bs-red);
+}
 .btn-messanger {
     width: 48px;
     height: 48px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     --bs-btn-color: #fff;
-    --bs-btn-bg: #3980FF;
-    --bs-btn-border-color: #3980FF;
+    --bs-btn-bg: var(--bs-blue);
+    --bs-btn-border-color: var(--bs-blue);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #0d6efd;
     --bs-btn-hover-border-color: #0d6efd;
@@ -26,7 +55,99 @@
     --bs-btn-disabled-border-color: #0d6efd;
 }
 
-.service-card {
+
+.content-text {
+    font-size: 0.9rem;
+}
+.icon-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tick {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: transparent!important;
+}
+.tick::before,
+.tick::after {
+    content: "";
+    position: absolute;
+    height: 2.3px;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    border-radius: 2px;
+    background-color: white;
+}
+.tick::before {
+    width: 8px;
+    transform-origin: left bottom;
+    transform: translate(3.5px, 2.3px) rotate(-45deg);
+}
+.tick::after {
+    width: 5px;
+    transform-origin: right bottom;
+    transform: translate(-3.5px, 2.3px) rotate(45deg);
+}
+.custom-card {
+    box-shadow: var(--bs-box-shadow);
+}
+.custom-card:hover {
+    box-shadow: var(--bs-box-shadow-lg);
+}
+
+
+.page {
+    background-color: #FEF4FF;
+}
+
+.main > *:not(:last-child) {
+    margin-bottom: 24pt;
+}
+
+.service {
     max-width: 410px;
     min-height: 336px;
+    background-color: white;
+}
+
+.stage {
+    max-width: 300px;
+}
+.stage-item {
+    margin-top: 24pt;
+}
+.stage-n {
+    width: 34px;
+    height: 34px;
+}
+.stage-btn {
+    width: 300px;
+    height: 129px;
+    border-radius: 20px;
+}
+
+.offer {
+    max-width: 410px;
+    min-width: 330px;
+}
+.pack-list .content-text {
+    font-size: 1rem;
+}
+.pack-item:not(:last-child) {
+    margin-bottom: 12pt;
+}
+.pack-item .content-text {
+    max-width: 220px;
+}
+.price-num {
+    display: inline-block;
+    margin-bottom: 8pt;
 }
