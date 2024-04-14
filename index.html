@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous" defer></script>
 
 </head>
-<body style="background-color: #FEF4FF;">
+<body class="page">
 
 <header class="container">
     <div class="navbar navbar-expand-lg d-flex justify-content-center">
@@ -71,11 +71,11 @@
                     </div>
             
                     <ul class="messangers d-flex gap-2 align-items-center list-unstyled my-0">
-                        <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
-                            <a href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
+                        <li>
+                            <a class="btn btn-messanger" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
                         </li>
-                        <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
-                            <a href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
+                        <li>
+                            <a class="btn btn-messanger" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
                         </li>
                     </ul>
                 </section>
@@ -112,7 +112,7 @@
 
         <ul class="service-list list-unstyled d-flex gap-2 justify-content-between">
             <li class="service-item">
-                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
                     <header class="header d-flex flex-column gap-4 align-items-center mb-4">
                         <h3 class="title order-2 h5 text-center">Разработка мобильных приложений</h3>
                         <img class="preview" src="img/smartphone.svg" alt="smartphone" width="50" height="89.8">
@@ -132,7 +132,7 @@
                 </article>
             </li>
             <li class="service-item">
-                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
                     <header class="header d-flex gap-4 align-items-center justify-content-start mb-4">
                         <h3 class="title order-2 h5">Web разработка</h3>
                         <img class="preview" src="img/developing.svg" alt="developing-icon" width="48.7" height="59">
@@ -161,7 +161,7 @@
                 </article>
             </li>
             <li class="service-item">
-                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                <article class="service-card d-flex flex-column py-4 px-5 rounded-4 bg-white shadow">
                     <header class="header d-flex flex-column gap-4 align-items-center mb-4">
                         <h3 class="title order-2 h5 text-center">Проектирование мобильного приложения</h3>
                         <img class="preview" src="img/apps.svg" alt="applications" width="156.3" height="91">
@@ -240,12 +240,12 @@
                 <a class="mail link-secondary link-underline link-underline-opacity-0" href="mailto:hello@softerio.ru">hello@softerio.ru</a>
             </div>
     
-            <ul class="messangers d-flex gap-2 align-items-center" style="list-style: none; padding: 0; margin: 0;">
-                <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
-                    <a href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
+            <ul class="messangers list-unstyled d-flex gap-2 align-items-center p-0 m-0">
+                <li>
+                    <a class="btn btn-messanger" href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
                 </li>
-                <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
-                    <a href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
+                <li>
+                    <a class="btn btn-messanger" href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
                 </li>
             </ul>
         </section>
