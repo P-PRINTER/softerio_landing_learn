@@ -13,18 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous" defer></script>
 
-    <style>
-        div {
-            padding: 0!important;
-        }
-    </style>
-
 </head>
-<body>
+<body style="background-color: #FEF4FF;">
 
-<header class="container-fluid">
-
-    <div class="container navbar navbar-expand-lg">
+<header class="container">
+    <div class="navbar navbar-expand-lg d-flex justify-content-center">
 
         <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="Logotype" width="285" height="72">
@@ -34,8 +27,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container-fluid d-flex align-items-center">
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <div class="d-flex align-items-center gap-4">
                 <nav class="" role="navigation">
             
                     <ul class="navbar-nav">
@@ -69,13 +62,13 @@
                     </ul>
                 </nav>
             
-                <section class="contacts ms-auto d-flex gap-4">
+                <section class="contacts d-flex gap-4">
                     <div class="d-flex flex-column justify-content-center">
-                        <a class="phone" href="tel:+7499348-82-16">8 (499) 348-82-16</a>
-                        <a href="mailto:hello@softerio.ru">hello@softerio.ru</a>
+                        <a class="phone link-underline link-underline-opacity-0" href="tel:+7499348-82-16">8 (499) 348-82-16</a>
+                        <a class="mail link-secondary link-underline link-underline-opacity-0" href="mailto:hello@softerio.ru">hello@softerio.ru</a>
                     </div>
             
-                    <ul class="messangers d-flex gap-2 align-items-center" style="list-style: none; padding: 0; margin: 0;">
+                    <ul class="messangers d-flex gap-2 align-items-center list-unstyled my-0">
                         <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
                             <a href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
                         </li>
@@ -91,7 +84,7 @@
 </header>
 
 <main class="container">
-    <section class="lead container bg-info rounded p-5" style="width: 1733px;">
+    <section class="lead bg-info rounded p-5">
             <h1>Разработка мобильных приложений и сервисов</h1>
 
             <ul style="list-style: none;">
@@ -108,9 +101,155 @@
             <button class="btn btn-danger p-3">Заказать приложение</button>
             <button class="btn btn-success p-3">Онлайн-консультация</button>
     </section>
+
+    <section class="services p-5">
+        <header class="d-flex gap-5 align-items-center mb-5">
+            <h2 class="h1">Наши услуги</h2>
+            <span class="text-secondary">Разработка мобильных приложений<br> и веб-проектов для бизнеса и стартапов</span>
+        </header>
+
+        <ul class="service-list list-unstyled d-flex gap-2 justify-content-between">
+            <li class="service-item">
+                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                    <header class="header d-flex flex-column gap-4 align-items-center mb-4">
+                        <h3 class="title order-2 h5 text-center">Разработка мобильных приложений</h3>
+                        <img class="preview" src="img/smartphone.svg" alt="smartphone" width="50" height="89.8">
+                    </header>
+                    <section class="content mb-4 d-none" style="font-size: 0.9rem;">
+                    </section>
+                    <footer class="footer tags">
+                        <ul class="tag-list list-inline text-center">
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">iOS</span>
+                            </li>
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">Android</span>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="service-item">
+                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                    <header class="header d-flex gap-4 align-items-center justify-content-start mb-4">
+                        <h3 class="title order-2 h5">Web разработка</h3>
+                        <img class="preview" src="img/developing.svg" alt="developing-icon" width="48.7" height="59">
+                    </header>
+                    <section class="content mb-4" style="font-size: 0.9rem;">
+                        <p class="content-text">
+                            Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.
+                        </p>
+                        <p class="content-text">
+                            Создаём web-сервисы для любого направления бизнеса: продажи, коммуникации, управление, серверную часть и API, гибкие административные инструменты для управления приложениями и сбора статистики.
+                        </p>
+                        <p class="content-text">
+                            Вы получаете продукт, привлекательный для пользователей и функциональный для вас.
+                        </p>
+                    </section>
+                    <footer class="footer tags">
+                        <ul class="tag-list list-inline text-center">
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">Frontend</span>
+                            </li>
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">Backend</span>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+            <li class="service-item">
+                <article class="service d-flex flex-column py-4 px-5 rounded-4 bg-white shadow" style="max-width: 410px; min-height: 336px;">
+                    <header class="header d-flex flex-column gap-4 align-items-center mb-4">
+                        <h3 class="title order-2 h5 text-center">Проектирование мобильного приложения</h3>
+                        <img class="preview" src="img/apps.svg" alt="applications" width="156.3" height="91">
+                    </header>
+                    <section class="content mb-4 d-none" style="font-size: 0.9rem;">
+                    </section>
+                    <footer class="footer tags">
+                        <ul class="tag-list list-inline text-center">
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">Дизайн</span>
+                            </li>
+                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                                <span class="">ТЗ</span>
+                            </li>
+                        </ul>
+                    </footer>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section class="services bg-info p-5">
+        <h2>Этапы разработки</h2>
+    </section>
+
+    <section class="services p-5">
+        <h2>Стоимость разработки мобильных приложений</h2>
+    </section>
+
+    <section class="services p-5">
+        <h2>Какие задачи поможет решить запуск мобильного приложения</h2>
+    </section>
+
+    <section class="services p-5">
+        <h2>Заказать приложение</h2>
+    </section>
 </main>
 
-<footer></footer>
+<footer class="container">
+    <div class="d-flex">
+        <img src="img/logo.svg" alt="Logotype" width="285" height="72">
+    
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ps-0" href="">О нас</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ps-0" href="">Наши услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ps-0" href="">Этапы работы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ps-0" href="">Стоимость</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Ещё</a>
+    
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#">Вакансии</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Статьи</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    
+        <section class="contacts ms-auto d-flex gap-4">
+            <div class="d-flex flex-column justify-content-center">
+                <a class="phone link-underline link-underline-opacity-0" href="tel:+7499348-82-16">8 (499) 348-82-16</a>
+                <a class="mail link-secondary link-underline link-underline-opacity-0" href="mailto:hello@softerio.ru">hello@softerio.ru</a>
+            </div>
+    
+            <ul class="messangers d-flex gap-2 align-items-center" style="list-style: none; padding: 0; margin: 0;">
+                <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
+                    <a href=""><img src="img/whatsapp-icon.svg" alt="whatsapp"></a>
+                </li>
+                <li class="rounded p-1 d-flex justify-content-center align-items-center" style="background-color: #0B6FF4; width: 48px; height: 48px;">
+                    <a href=""><img src="img/telegram-icon.svg" alt="telegram"></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</footer>
 
 </body>
 </html>
