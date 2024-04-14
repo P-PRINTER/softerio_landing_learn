@@ -156,6 +156,15 @@ h1, h2, h2, h4, h5, h6,
     margin-bottom: 8pt;
 }
 
+.main > .tasks {
+    margin-bottom: 136pt;
+}
+.tasks > .big-title {
+    margin-bottom: 48pt;
+}
+.tasks > .wrapper {
+    padding-top: 136pt;
+}
 .task-list {
     max-height: 500px;
 }
