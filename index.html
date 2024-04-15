@@ -482,7 +482,62 @@
     </section>
 
     <section class="order container p-5">
-        <h2 class="big-title text-center">Заказать приложение</h2>
+        <h2 class="big-title text-center mb-5">Заказать приложение</h2>
+
+        <form id="order-form" class="form d-flex justify-content-between" action="" method="post">
+            <input type="radio" name="budget" value="budget_1" class="d-none" id="budget-1">
+            <input type="radio" name="budget" value="budget_2" class="d-none" id="budget-2">
+            <input type="radio" name="budget" value="budget_3" class="d-none" id="budget-3">
+            <input type="radio" name="budget" value="budget_4" class="d-none" id="budget-4">
+            <input type="radio" name="budget" value="budget_5" class="d-none" id="budget-5">
+            <input type="radio" name="budget" value="budget_6" class="d-none" id="budget-6">
+            
+            <section class="budget-btns shrink-n1">
+                <h3 class="h4 mb-5">Бэджет проекта:</h3>
+                <ul class="budget-list list-unstyled d-flex gap-4 flex-wrap">
+                    <li class="budget-item">
+                        <label for="budget-1" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            20 000 — 50 000 руб.
+                    </span></label></li>
+                    <li class="budget-item">
+                        <label for="budget-2" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            50 000 — 100 000 руб.
+                    </span></label></li>
+                    <li class="budget-item">
+                        <label for="budget-3" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            100 000 — 500 000 руб.
+                    </span></label></li>
+                    <li class="budget-item">
+                        <label for="budget-4" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            500 000 — 1 000 000 руб.
+                    </span></label></li>
+                    <li class="budget-item">
+                        <label for="budget-5" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            1 000 000 руб. — 2 000 000 руб.
+                    </span></label></li>
+                    <li class="budget-item">
+                        <label for="budget-6" class="custom-btn position-relative rounded-pill text-center" tabindex="1"><span class="position-absolute top-50 translate-middle fw-medium text-nowrap">
+                            2 000 000 руб. — 3 000 000 руб.
+                    </span></label></li>
+                </ul>
+            </section>
+
+            <section class="contacts grow-3">
+                <h3 class="h4 mb-5">Контакты:</h3>
+                
+                <div class="mb-3">
+                    <input type="text" name="firstname" class="form-control p-3" placeholder="Имя">
+                </div>
+                <div class="mb-3">
+                    <input type="tel" name="phone" class="form-control p-3" placeholder="Телефон" autocomplete="">
+                </div>
+                <div class="mb-3">
+                    <textarea name="comment" class="form-control p-3" placeholder="Комментарий"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-blue p-4">Заказать обратный звонок</button>
+            </section>
+        </form>
     </section>
 </main>
 
