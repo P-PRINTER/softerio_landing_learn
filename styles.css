@@ -139,17 +139,24 @@ textarea {
     margin-bottom: 24pt;
 }
 
+.main > .lead {
+    background-image: url("img/lead-img.png");
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: bottom;
+}
+
 .service {
     max-width: 410px;
     min-height: 336px;
     background-color: white;
 }
 
-.stage {
-    max-width: 300px;
-}
 .stage-item {
     margin-top: 24pt;
+}
+.stage {
+    max-width: 300px;
 }
 .stage-btn {
     width: 300px;
@@ -189,6 +196,9 @@ textarea {
 }
 .task {
     width: 410px;
+}
+.task .content-text {
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .budget-list {
