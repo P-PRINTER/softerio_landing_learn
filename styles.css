@@ -158,6 +158,9 @@ textarea {
 .stage {
     max-width: 300px;
 }
+.stage .title {
+    width: 80%;
+}
 .stage-btn {
     width: 300px;
     height: 129px;
@@ -193,9 +196,6 @@ textarea {
 }
 .task-list {
     max-height: 500px;
-}
-.task {
-    width: 410px;
 }
 .task .content-text {
     text-shadow: 1px 1px 1px #fff;
