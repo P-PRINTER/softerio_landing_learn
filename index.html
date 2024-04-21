@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous" defer></script>
 
+    <script src="scripts.js" defer></script>
+
 </head>
 <body class="page">
 
@@ -114,32 +116,37 @@
 
         <ul class="service-list list-unstyled d-flex gap-2 justify-content-between">
             <li class="service-item">
-                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
-                    <header class="header d-flex flex-column gap-4 align-items-center">
-                        <h3 class="title order-2 h5 text-center">Разработка мобильных приложений</h3>
-                        <img class="preview" src="img/smartphone.svg" alt="smartphone" width="50" height="89.8">
+                <article class="service custom-card position-relative d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header">
+                        <h3 class="title order-2 h5 mb-0 text-center">Разработка мобильных приложений</h3>
+                        <div class="preview">
+                            <img class="content d-block" src="img/smartphone.svg" alt="smartphone" width="50" height="89.8">
+                        </div>
                     </header>
-                    <section class="content d-none" style="font-size: 0.9rem;">
+                    <section class="content collapse" id="service-1">
                     </section>
                     <footer class="footer tags">
-                        <ul class="tag-list list-inline text-center">
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                        <ul class="tag-list list-unstyled d-flex gap-3 justify-content-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">iOS</span>
                             </li>
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">Android</span>
                             </li>
                         </ul>
                     </footer>
+                    <button class="btn stretched-link service-btn" data-bs-toggle="collapse" data-bs-target="#service-1" aria-expanded="false" aria-controls="service-1"></button>
                 </article>
             </li>
             <li class="service-item">
-                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
-                    <header class="header d-flex gap-4 align-items-center justify-content-start">
-                        <h3 class="title order-2 h5">Web разработка</h3>
-                        <img class="preview" src="img/developing.svg" alt="developing-icon" width="48.7" height="59">
+                <article class="service custom-card position-relative d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header">
+                        <h3 class="title order-2 h5 mb-0 text-center">Web разработка</h3>
+                        <div class="preview">
+                            <img class="content d-block" src="img/developing.svg" alt="developing-icon" width="100" height="100">
+                        </div>
                     </header>
-                    <section class="content">
+                    <section class="content collapse" id="service-2">
                         <p class="content-text">
                             Разрабатываем сайты персонально под ваш бизнес. Анализируем рынок и целевую аудиторию в соответствии с задачами, которые вы хотите решить с помощью веб-сайта.
                         </p>
@@ -151,35 +158,39 @@
                         </p>
                     </section>
                     <footer class="footer tags">
-                        <ul class="tag-list list-inline text-center">
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                        <ul class="tag-list list-unstyled d-flex gap-3 justify-content-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">Frontend</span>
                             </li>
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">Backend</span>
                             </li>
                         </ul>
                     </footer>
+                    <button class="btn stretched-link service-btn" data-bs-toggle="collapse" data-bs-target="#service-2" aria-expanded="false" aria-controls="service-2"></button>
                 </article>
             </li>
             <li class="service-item">
-                <article class="service custom-card d-flex flex-column gap-4 py-4 px-5 rounded-4">
-                    <header class="header d-flex flex-column gap-4 align-items-center">
-                        <h3 class="title order-2 h5 text-center">Проектирование мобильного приложения</h3>
-                        <img class="preview" src="img/apps.svg" alt="applications" width="156.3" height="91">
+                <article class="service custom-card position-relative d-flex flex-column gap-4 py-4 px-5 rounded-4">
+                    <header class="header">
+                        <h3 class="title order-2 h5 mb-0 text-center">Проектирование мобильного приложения</h3>
+                        <div class="preview">
+                            <img class="content d-block" src="img/apps.svg" alt="applications" width="156.3" height="91">
+                        </div>
                     </header>
-                    <section class="content d-none">
+                    <section class="content collapse" id="service-3">
                     </section>
                     <footer class="footer tags">
-                        <ul class="tag-list list-inline text-center">
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                        <ul class="tag-list list-unstyled d-flex gap-3 justify-content-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">Дизайн</span>
                             </li>
-                            <li class="tag-item list-inline-item border border-secondary rounded-pill p-2 px-4 text-center">
+                            <li class="tag-item border border-secondary rounded-pill p-2 px-4 text-center">
                                 <span class="">ТЗ</span>
                             </li>
                         </ul>
                     </footer>
+                    <button class="btn stretched-link service-btn" data-bs-toggle="collapse" data-bs-target="#service-3" aria-expanded="false" aria-controls="service-3"></button>
                 </article>
             </li>
         </ul>
@@ -315,7 +326,7 @@
 
         <ul class="offer-list list-unstyled d-flex justify-content-between gap-2">
             <li class="offer-item">
-                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                <article class="offer position-relative custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
                     <header class="header d-flex gap-3 justify-content-center align-items-end">
                         <h3 class="h3 order-2">Типовой</h3>
                         <img src="img/smartphone.svg" alt="simple smartphone" height="50.3">
@@ -347,12 +358,12 @@
                     <footer class="footer text-center">
                         <span class="price-num fs-4 fw-medium">1 000 000 руб.</span>
                         <br>
-                        <a class="btn btn-outline-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                        <a href="#" class="btn btn-outline-primary stretched-link py-4 px-5 fw-medium">Заказать приложение</a>
                     </footer>
                 </article>
             </li>
             <li class="offer-item">
-                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                <article class="offer position-relative custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
                     <header class="header d-flex gap-3 justify-content-center align-items-end">
                         <h3 class="h3 order-2">Бизнес</h3>
                         <img src="img/smartphone-business.svg" alt="simple smartphone" height="50.3">
@@ -384,12 +395,12 @@
                     <footer class="footer text-center">
                         <span class="price-num fs-4 fw-medium">2 000 000 руб.</span>
                         <br>
-                        <a class="btn btn-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                        <a href="#" class="btn btn-outline-primary stretched-link py-4 px-5 fw-medium">Заказать приложение</a>
                     </footer>
                 </article>
             </li>
             <li class="offer-item">
-                <article class="offer custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
+                <article class="offer position-relative custom-card bg-white d-flex flex-column gap-5 py-5 px-4 rounded-4">
                     <header class="header d-flex gap-3 justify-content-center align-items-end">
                         <h3 class="h3 order-2">Кастом</h3>
                         <img src="img/smartphone-custom.svg" alt="simple smartphone" height="50.3">
@@ -421,7 +432,7 @@
                     <footer class="footer text-center">
                         <span class="price-num fs-4 fw-medium">3 000 000 руб.</span>
                         <br>
-                        <a class="btn btn-outline-primary py-4 px-5 fw-medium">Заказать приложение</a>
+                        <a href="#" class="btn btn-outline-primary stretched-link py-4 px-5 fw-medium">Заказать приложение</a>
                     </footer>
                 </article>
             </li>
@@ -543,7 +554,7 @@
     </section>
 </main>
 
-<footer class="footer container">
+<footer class="footer container py-5">
     <div class="d-flex">
         <img src="img/logo.svg" alt="Logotype" width="285" height="72">
     

@@ -129,6 +129,12 @@ textarea {
 .custom-card:hover {
     box-shadow: var(--bs-box-shadow-lg);
 }
+.preview {
+    position: relative;
+}
+.preview > .content {
+    position: absolute;
+}
 
 
 .page {
@@ -148,8 +154,35 @@ textarea {
 
 .service {
     max-width: 410px;
-    min-height: 336px;
     background-color: white;
+}
+.service > .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 16pt;
+}
+.service > .header > .preview {
+    width: 100px;
+    height: 100px;
+}
+.service > .header > .preview > .content {
+    /* width: 100%;
+    height: 100%; */
+    transition: transform .5s;
+}
+.service.active > .header {
+    flex-direction: row;
+}
+.service.active > .header > .preview {
+    width: 60px;
+    height: 60px;
+}
+.service.active > .header > .preview > .content {
+    transform: scale(.6);
+    top: -35%;
+    left: -35%;
 }
 
 .stage-item {
